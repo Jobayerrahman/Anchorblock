@@ -6,8 +6,8 @@ import { faMagnifyingGlass, faGear, faBars, faXmark } from '@fortawesome/free-so
 import { faBell } from '@fortawesome/free-regular-svg-icons'
 
 const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'Users', href: '#', current: true },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Users', href: '/Users', current: true },
   { name: 'Projects', href: '#', current: false },
   { name: 'Tasks', href: '#', current: false },
   { name: 'Reporting', href: '#', current: false },
@@ -22,7 +22,7 @@ export default function NavigationComponent() {
     <Disclosure as="nav" className="bg-[#6941C6]">
       {({ open }) => (
         <>
-          <div className="mx-5 px-2 sm:px-6 lg:px-8">
+          <div className="mx-2 px-2 sm:px-6 lg:px-8 sm:mx-[60px]">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -92,7 +92,11 @@ export default function NavigationComponent() {
                 </button>
               </div>
                 <div className="relative ml-3">
-                    <div className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <div className="relative flex 
+                            rounded-full bg-[#fff] text-sm 
+                            focus:outline-none focus:ring-2 
+                            focus:ring-white focus:ring-offset-2 
+                            focus:ring-offset-gray-800">
                       <img
                         className="h-[40px] w-[40px] rounded-full"
                         src={profileImage}
