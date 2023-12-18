@@ -9,10 +9,10 @@ function Approuter() {
     return (
         <>
             <Routes>
-                <Route exact path="/" Component={BlankDashboardPage}></Route>
-                <Route exact path="/Users" Component={UserDashBoardPage}></Route>
-                <Route exact path="/SignIn" Component={SignInPage}></Route>
-                <Route exact path="/SignUp" Component={SignUpPage}></Route>
+                <Route path="/" Component={BlankDashboardPage}></Route>
+                <Route path="/Users" Component={UserDashBoardPage}></Route>
+                <Route path="/SignIn" Component={SignInPage}></Route>
+                <Route path="/SignUp" Component={SignUpPage}></Route>
             </Routes>
         </>
     );
